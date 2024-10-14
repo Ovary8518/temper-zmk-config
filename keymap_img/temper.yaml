@@ -1,5 +1,33 @@
 layers:
   default:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - A
+    - S
+    - D
+    - F
+    - G
+    - H
+    - J
+    - K
+    - L
+    - {t: BACKSPACE, s: Alt+ BACKSPACE}
+  - - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - {t: ',', s: ;}
+    - {t: ., s: ':'}
+    - {t: '?', s: '!'}
+  - - ⌃
+    - num
+    - {t: ⇧, s: ⇪}
+    - SPACE
+    - nav
+    - ENTER
+  colemak:
   - - Q
     - W
     - F
@@ -21,34 +49,6 @@ layers:
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
-  - - ⌘
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  qwerty:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - S
-    - D
-    - F
-    - G
-    - H
-    - J
-    - K
-    - L
-    - {t: ;, s: ':'}
-  - - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
-    - {t: ',', s: <}
-    - {t: ., s: '>'}
-    - /
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -77,14 +77,14 @@ layers:
     - '2'
     - '3'
     - {t: '=', s: +}
-  - - {t: ▽, type: trans}
+  - - ⎇
     - {type: held}
     - {t: ▽, type: trans}
+    - DEL
+    - {t: ▽, type: trans}
     - '0'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   nav:
-  - - {t: ▽, type: trans}
+  - - ESC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -121,7 +121,7 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
   fun:
-  - - {t: qwerty, h: toggle}
+  - - {t: colemak, h: toggle}
     - MUTE
     - VOL DN
     - VOL UP
